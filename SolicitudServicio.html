@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de servicio</title>
+
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+<form id="formulario">
+
+    <label for="pNombre">Nombre del solicitante:</label><br>
+    <input type="text" id="pNombre" name="pNombre"><br>
+    <div class="error" id="errorNombre"></div><br>
+
+    <label for="Email">Correo electrónico:</label><br>
+    <input type="email" id="Email" name="pEmail"><br>
+    <div class="error" id="errorEmail"></div><br>
+
+    <label for="tServicio">Tipo de servicio:</label><br>
+    <select id="tServicio" name="tServicio">
+        <option value="">Seleccione una opción</option>
+        <option value="Instalacion">Instalación</option>
+        <option value="Mantenimiento">Mantenimiento</option>
+        <option value="Configuracion">Configuración</option>
+    </select><br>
+    <div class="error" id="errorServicio"></div><br>
+
+    <label for="fSolicitada">Fecha solicitada:</label><br>
+    <input type="date" id="fSolicitada" name="fSolicitada"><br>
+    <div class="error" id="errorFechaSolicitada"></div><br>
+
+    <label for="DescripcionPedido">Descripción del pedido:</label><br>
+    <textarea id="DescripcionPedido" name="DescripcionPedido"></textarea><br>
+    <div class="error" id="errorDescripcionPedido"></div><br>
+
+    <label for="Urgente">Marcar si es urgente:</label>
+    <input type="checkbox" id="Urgente" name="Urgente" value="Urgente"><br><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+<script src="Main.js"></script>
+
+</body>
+</html>

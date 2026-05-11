@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Equipo</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+<form id="formulario">
+
+    <label for="NombreEquipo">Nombre del equipo:</label><br>
+    <input type="text" id="NombreEquipo" name="NombreEquipo"><br>
+    <div class="error" id="errorNombre"></div><br>
+
+    <label for="TipoEquipo">Tipo de equipo:</label><br>
+    <input type="text" id="TipoEquipo" name="TipoEquipo"><br>
+    <div class="error" id="errorTipo"></div><br>
+
+    <label for="NumeroSerie">Número de serie:</label><br>
+    <input type="text" id="NumeroSerie" name="NumeroSerie"><br>
+    <div class="error" id="errorSerie"></div><br>
+
+    <label for="FechaAdquisicion">Fecha de adquisición:</label><br>
+    <input type="date" id="FechaAdquisicion" name="FechaAdquisicion"><br>
+    <div class="error" id="errorFecha"></div><br>
+
+    <label for="EstadoEquipo">Estado del equipo:</label><br>
+    <select id="EstadoEquipo" name="EstadoEquipo">
+        <option value="">Seleccione una opción</option>
+        <option value="Activo">Activo</option>
+        <option value="Reparacion">Reparación</option>
+        <option value="Fuera de servicio">Fuera de servicio</option>
+    </select><br>
+    <div class="error" id="errorEstado"></div><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+<script src="Main.js"></script>
+
+</body>
+</html>

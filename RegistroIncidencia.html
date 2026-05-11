@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Incidencia</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<form id="formulario">
+
+    <label for="pNombre">Nombre del solicitante:</label><br>
+    <input type="text" id="pNombre" name="pNombre"><br>
+    <div class="error" id="errorNombre"></div><br>
+
+    <label for="Email">Correo electrónico:</label><br>
+    <input type="email" id="Email" name="pEmail"><br>
+    <div class="error" id="errorEmail"></div><br>
+
+    <label for="tIncidencia">Título de incidencia:</label><br>
+    <input type="text" id="tIncidencia" name="tIncidencia"><br>
+    <div class="error" id="errorTitulo"></div><br>
+
+    <label for="Descripcion">Descripción:</label><br>
+    <textarea id="Descripcion" name="Descripcion"></textarea><br>
+    <div class="error" id="errorDescripcion"></div><br>
+
+    <label for="tipoProblema">Tipo de problema:</label><br>
+    <select id="tipoProblema" name="tipoProblema">
+        <option value="">Seleccione</option>
+        <option value="Hardware">Hardware</option>
+        <option value="Software">Software</option>
+        <option value="Red">Red</option>
+        <option value="Otro">Otro</option>
+    </select><br>
+    <div class="error" id="errorProblema"></div><br>
+
+    <label for="NivelPrioridad">Nivel de prioridad:</label><br>
+    <select id="NivelPrioridad" name="NivelPrioridad">
+        <option value="">Seleccione</option>
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+    </select><br>
+    <div class="error" id="errorPrioridad"></div><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+<script src="Main.js"></script>
+
+</body>
+</html>
+
+</form>
